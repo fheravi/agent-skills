@@ -91,3 +91,14 @@ Your output serves two purposes:
 * **Extension Hook (Relaxing an Assumption):** *"If you remove assumption [X] from Section [Y], the method breaks because [Z]—solving this requires..."*
 * **Transfer Hook (Cross-Pollinating the Tool):** *"The core technique [A] used to solve [B] could be transplanted to domain [C] if..."*
 * **Bottleneck Hook (Fixing the Weakest Link):** *"The pipeline's new bottleneck is now [D]; replacing it with a stronger method would yield..."*
+
+---
+
+### 🧱 8. Stackable Formatting Contract (CRITICAL)
+To allow seamless concatenation into a multi-paper `summaries.md`:
+1. **Root Heading Level:** Use `## [PAPER-ID]: [Paper Title]` for the top header. NEVER use Level 1 (`#`) headings.
+2. **Subsections:** Use `###` for all sub-sections (e.g., `### 1. Background`, `### 6. Critical Audit`).
+3. **Delimiter:** End every summary with a single markdown horizontal rule (`---`) followed by a blank line.
+4. **Self-Contained References:** Do not use relative numbering like "the previous paper" or "Paper 1". Use explicit citation keys (e.g., `[Smith2024Adaptive]`).
+5. **No Outer Prose:** Output only the structured markdown block. Do not write chat filler before or after the summary.
+
