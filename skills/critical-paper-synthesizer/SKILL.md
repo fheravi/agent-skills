@@ -96,7 +96,7 @@ Your output serves two purposes:
 
 ### 🧱 8. Stackable Formatting Contract (CRITICAL)
 To allow seamless concatenation into a multi-paper `summaries.md`:
-1. **Root Heading Level:** Use `# 📄 PAPER-ID]: [Paper Title]` for the top header.
+1. **Root Heading Level:** Use `## 📄 PAPER-ID]: [Paper Title]` for the top header.
 2. **Subsections:** Use `###` for all sub-sections (e.g., `### 1. Background`, `### 6. Critical Audit`).
 3. **Delimiter:** End every summary with a single markdown horizontal rule (`---`) followed by a blank line.
 4. **Self-Contained References:** Do not use relative numbering like "the previous paper" or "Paper 1". Use explicit citation keys (e.g., `[Smith2024Adaptive]`).
